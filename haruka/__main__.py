@@ -408,12 +408,12 @@ def get_help(bot: Bot, update: Update):
         if help_txt == False:
             help_txt = HELPABLE[module].__help__
 
-        text = tld(chat.id, "Here is the help for the *{}* module:\n{}").format(mod_name, help_txt)
+        text = tld(chat.id, "Help Sectionfor the *{}* module:\n{}").format(mod_name, help_txt)
         send_help(chat.id, text, InlineKeyboardMarkup([[InlineKeyboardButton(text=tld(chat.id, "Back"), callback_data="help_back")]]))
 
     else:
         send_help(chat.id, tld(chat.id, "send-help").format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else tld(
-            chat.id, "\nAll commands can either be used with `/` or `!`.\n"
+            chat.id, "\nAll commands can either be Triggered with `/` or `!`.\n"
                 )))
 
 def send_settings(chat_id, user_id, user=False):
