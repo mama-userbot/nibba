@@ -20,20 +20,20 @@ from haruka.modules.helper_funcs.misc import paginate_modules
 from haruka.modules.translations.strings import tld, tld_help 
 from haruka.modules.connection import connected
 
-PM_START = """Hello {}, my name is {}!
+PM_START = """Hello , there {}, The name's {}!
 
 • I'm group manager bot with Anti-spam , i can help you to manage your groups with ease.
 
 • Activate Anti-spam protection in your groups by this command : 
 /antispam on 
 
-• Special thanks to [this person](t.me/okay_smilee) for helping me.
+• Special thanks to [this person :)](t.me/okay_smilee) for helping me.
 
-• Click /help or Help button below to find out more about how to use me to my full potential.
+• Click /help or Help button below to get info about me what can i do .
 
 • You can add me to a group by clicking [here 👩‍💻](http://t.me/MissNestle_bot?startgroup=true).
 
-• Managed By : @Itz_me_mrcreative // @NeetRankersHub ✨
+• Managed By : @NeetRankersHub ✨
 """
 
 
