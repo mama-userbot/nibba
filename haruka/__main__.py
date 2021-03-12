@@ -23,13 +23,13 @@ from haruka.modules.connection import connected
 PM_START = """Hello , there {}, The name's {}!
 
 • I'm group manager bot with Anti-spam , i can help you to manage your groups with ease.
+I have Lots Of Features To Manage Your Groups :
+➥ AntiFlood System , Filter Saving, Note saving, Warning System, Reporting System, Blacklisting system and many more..
 
-• Activate Anti-spam protection in your groups by this command : 
+• Inspite of this i have Anti-spam protection turn on it by : 
 /antispam on 
 
 • Special thanks to [this person :)](t.me/okay_smilee) for helping me.
-
-• Click /help or Help button below to get info about me what can i do .
 
 • You can add me to a group by clicking [here 👩‍💻](http://t.me/MissNestle_bot?startgroup=true).
 
@@ -343,7 +343,7 @@ def help_button(bot: Bot, update: Update):
             if help_txt == False:
                 help_txt = HELPABLE[module].__help__
 
-            text = tld(chat.id, "Here is the help for the *{}* module:\n{}").format(mod_name, help_txt)
+                text = tld(chat.id, "This is help section for the *{}* module:\n{}").format(mod_name, help_txt)
             query.message.reply_text(text=text,
                                      parse_mode=ParseMode.MARKDOWN,
                                      reply_markup=InlineKeyboardMarkup(
@@ -393,9 +393,9 @@ def get_help(bot: Bot, update: Update):
     # ONLY send help in PM
     if chat.type != chat.PRIVATE:
 
-        update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
+        update.effective_message.reply_text("💠 OK! PM Me for help .",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="Help",
+                                                [[InlineKeyboardButton(text="✨ Tap on me Help ✨",
                                                                        url="t.me/{}?start=help".format(
                                                                            bot.username))]]))
         return
